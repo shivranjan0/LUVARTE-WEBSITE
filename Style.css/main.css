@@ -257,3 +257,337 @@
     font-optical-sizing: auto;
     font-size: 16px;
 }
+
+
+.related-products-section {
+    background-color: #FCFBF0;
+    padding: 2rem 3.5rem;
+    font-family: "Libre Franklin", sans-serif;
+    border-top: 1px solid #EBEAE6;
+}
+
+.related-top-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.related-promo-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.related-promo-images img {
+    width: 190%;
+    height: auto;
+    object-fit: cover;
+}
+
+.related-products-title {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.related-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.related-product-card {
+    border-right: 1px solid #EBEAE6;
+    padding-right: 1.5rem;
+}
+
+.related-product-card:last-child {
+    border-right: none;
+
+}
+
+.related-product-image {
+    margin-bottom: 1rem;
+}
+
+.related-product-image img {
+    width: 100%;
+    height: auto;
+    /* Ensures aspect ratio is respected */
+    object-fit: cover;
+    /* Crops the image to fit the container without distortion */
+    background-color: #EBEAE6;
+    /* Adds a background color behind the image */
+    aspect-ratio: 1 / 1.2;
+}
+
+.related-product-info {
+    padding-left: 0.5rem;
+}
+
+.related-product-name {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.related-product-price {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #111;
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+/* For items with a sale price */
+.related-product-price .original-price {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    text-decoration: line-through;
+}
+
+.related-product-price .sale-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+/* For items with only one price */
+.related-product-price .price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+
+/* footer section style */
+
+.footer {
+    background-color: #171717;
+    /* Equivalent to bg-neutral-900 */
+    color: #e5e5e5;
+    /* Equivalent to text-neutral-200 */
+    padding-top: 4rem;
+    /* 64px */
+    padding-bottom: 3rem;
+    /* 48px */
+}
+
+.footer-container {
+    max-width: 80rem;
+    /* 1280px, equivalent to max-w-7xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    /* 16px */
+    padding-right: 1rem;
+    /* 16px */
+}
+
+/* --- Footer Top: Logo & Socials --- */
+.footer-top {
+    position: relative;
+    margin-bottom: 2rem;
+    /* 32px */
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+/* Styles for the logo image */
+.footer-logo img {
+    max-width: 100%;
+    /* Ensure it doesn't overflow */
+    height: auto;
+    display: inline-block;
+    /* To allow text-align: center to work */
+    margin-bottom: 0.5rem;
+    /* Small space below if needed */
+    /* Adjust these values to fit your specific logo image */
+    width: 180px;
+    /* Example width */
+    /* If your logo is dark, this makes it white */
+}
+
+/* Make the logo even larger on desktop screens if desired */
+@media (min-width: 1024px) {
+    .footer-logo img {
+        width: 250px;
+        /* Larger example width for desktop */
+    }
+}
+
+
+.social-icons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+    /* 16px, equivalent to space-x-4 */
+    font-size: 1.25rem;
+    /* 20px */
+}
+
+.social-icons a {
+    color: #a3a3a3;
+    /* Equivalent to text-neutral-400 */
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    /* Equivalent to hover:text-white */
+}
+
+/* --- Footer Separator --- */
+.footer-separator {
+    border-top: 1px solid #404040;
+    /* Equivalent to border-neutral-700 */
+    margin-bottom: 2.5rem;
+    /* 40px */
+}
+
+/* --- Footer Bottom: Links Grid --- */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on mobile */
+    gap: 2rem;
+    /* 32px */
+}
+
+.footer-column h3 {
+    font-size: 0.875rem;
+    /* 14px */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    /* Equivalent to tracking-wider */
+    color: #a3a3a3;
+    /* Equivalent to text-neutral-400 */
+    margin-bottom: 1rem;
+    /* 16px */
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* 12px, equivalent to space-y-3 */
+}
+
+.footer-column ul a {
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.footer-column ul a:hover {
+    color: #ffffff;
+}
+
+/* --- Contact Column Specifics --- */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* 12px */
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-item:hover {
+    color: #ffffff;
+}
+
+.contact-item i {
+    color: #a3a3a3;
+    /* Equivalent to text-neutral-400 */
+    transition: color 0.3s ease;
+}
+
+/* This replicates the 'group-hover' behavior */
+.contact-item:hover i {
+    color: #ffffff;
+}
+
+
+/* --- Responsive Breakpoints --- */
+
+/* Medium screens (md) */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 columns on desktop */
+    }
+}
+
+/* Container padding adjustments */
+@media (min-width: 640px) {
+    .footer-container {
+        padding-left: 1.5rem;
+        /* 24px */
+        padding-right: 1.5rem;
+        /* 24px */
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        padding-left: 2rem;
+        /* 32px */
+        padding-right: 2rem;
+        /* 32px */
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* --- Placeholder Content Styles --- */
+.placeholder-content {
+    height: 100vh;
+    padding: 2.5rem;
+    /* 40px */
+}
+
+.placeholder-content h1 {
+    font-size: 1.875rem;
+    /* 30px */
+    font-weight: 700;
+}
+
+.placeholder-content p {
+    margin-top: 1rem;
+    /* 16px */
+}
