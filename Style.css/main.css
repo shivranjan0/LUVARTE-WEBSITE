@@ -30,15 +30,16 @@
 .nav-left a {
     text-decoration: none;
     color: #1A1814;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    word-spacing: 1px;
+    font-weight:500 ;
 }
 
 
 .logo-container {
     align-items: center;
-    /* border-left: 1px solid #EBEAE6;
-    border-right: 1px solid #EBEAE6; */
     padding: 0 3rem;
 }
 
@@ -263,7 +264,6 @@
     background-color: #FCFBF0;
     padding: 2rem 3.5rem;
     font-family: "Libre Franklin", sans-serif;
-    border-top: 1px solid #EBEAE6;
 }
 
 .related-top-content {
